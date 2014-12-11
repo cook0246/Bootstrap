@@ -1,0 +1,97 @@
+/* this is a custom scss style for my bootstrap*/
+@import "variables";
+@import "normalize";
+
+/* Medium devices */
+#photochanger{height: 40rem; background: no-repeat center center; background-size: 100%;}
+
+@media (max-width: 680px) {
+//    #picFeature{display: none;}
+    #photochanger{background: url('/img/mx.jpg') no-repeat center center; background-size: 100%;}
+}
+
+
+@media (min-width: 680px) {
+//    #picFeature{display: none;}
+    #photochanger{background: url('/img/banner.jpg')no-repeat center center; background-size: 100%;}
+}
+
+
+
+body{min-height: 1200px; font-family: $font-two;}
+
+//variables to declare:  background color, text-color, font-sizes, font-families
+//body{ padding-top: 10rem; min-height: 1000px;}
+
+#title{
+    font-family: $font-one; font-weight: 100;
+    /* change font size based on the bootstrap default breakpoints*/
+    text-align: left; 
+    font-size: $large;
+    color: $color-one;
+}
+#frontpage{
+    //background: url(../img/MX.jpg);
+    height: 500px;
+}
+
+
+
+#adrForm{margin-top: 2rem;}
+
+.container{ color: $color-two;}
+
+.active{border-left: 0.4rem double $color-one; border-right: 0.4rem double $color-one;}
+
+nav {font-family:$font-one;}
+
+.indicator{
+    border-top: 2rem solid black;
+    background:#eff; 
+    color: #555;
+    text-align: center; 
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+table{font-size: $medium;}
+
+//mostly footer stuff:
+footer{
+    margin: 0 auto;
+    display: block;
+    font-size: 1rem;
+    background: white;
+    border-top: 0.1rem solid $color-one; 
+    border-bottom: 0.1rem solid $color-one; 
+    padding: 0.5rem;
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+   
+    width: 100%;
+}
+footer p{color: $color-one;}
+
+.center{text-align: center;}
+.block{display: inline-block; float: left; color: $color-two; margin: 0.5rem; border: 0.1rem solid $color-two; padding: 0.4rem 0.6rem; border-radius: 0.5rem;}
+.block:hover{background:$color-two; cursor: pointer;}
+
+
+h1{color: darkblue; font-size: 4rem; text-transform: uppercase; font-family: $font-three;}
+.map{display: block; margin:0 auto;}
+
+input{font-family: sans-serif; font-weight: 100; font-size: 2rem; float:right; width: 70%;}
+label{font-family: $font-one; font-size: 1.5rem; line-height: 3rem; float:left;}
+
+label{float:left;}
+
+ul{padding: 0 0 0 0;
+margin: 0 0 0 0;}
+
+li {list-style: none; margin-bottom: 20px;}
+li  img{padding-bottom: 20px;}
+
+
+
